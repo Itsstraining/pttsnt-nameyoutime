@@ -1,48 +1,39 @@
 // Add new functions, variables here
 function Tach(x) {
   let kq = "";
-
+  let n = x;
+  j = 2;
   let temp = [];
 
-  for (let i = 2; i < x - 1; i++) {
-    if (x % i == 0) {
+  for (let i = 2; i < x; i++) {
+    if (n % i == 0) {
       temp.push(i);
     }
   }
-  for (let i = 0; i < temp.length; i++) {
-    if (i==0) {
-      kq = temp[i];
-    } else {
-      kq = kq + " " + temp[i];
+  for (let j = 0;j< temp.length; j++) {
+    if(j==0){
+      kq = kq+temp[j];
+    }else{
+    kq =kq + " " + temp[j];
     }
-  }
-  return kq;
 
-  // for (let i = 0; i < temp.length; i++) {
-  //   if (temp[i] * temp[i + 1] != x) {
-  //     for (let i = 2; i < x - 1; i++) {
-  //       if (x % i == 0) {
-  //         x = x / i;
-  //         temp.push(i);
-  //       }
-  //     }
-  //   }
-  // }
-  // for(let i = 0 ; temp.length;i++){
-  //   kq += " " + temp[i];
-  // }
-  // return kq;
-}
-
-function convert(x) {
-  temp = Array;
-  x = temp;
-  let kq;
-  for (let i = 0; i < temp.length; i++) {
-    kq = kq + " " + temp[i];
   }
   return kq;
 }
+
+// for (let i = 0; i < temp.length; i++) {
+//   if (temp[i] * temp[i + 1] != x) {
+//     for (let i = 2; i < x - 1; i++) {
+//       if (x % i == 0) {
+//         x = x / i;
+//         temp.push(i);
+//       }
+//     }
+//   }
+// }
+
+// return kq;
+
 
 function main(input) {
   // Your code goes here
